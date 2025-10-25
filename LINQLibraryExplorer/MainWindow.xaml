@@ -1,0 +1,98 @@
+﻿<Window x:Class="LINQLibraryExplorer.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:LINQLibraryExplorer"
+        mc:Ignorable="d"
+        Title="LINQ Library Explorer" Height="450" Width="800">
+
+    <Window.Resources>
+        <!-- Shared ComboBoxItem Style for all ComboBoxes -->
+        <Style TargetType="ComboBoxItem">
+            <Setter Property="Foreground" Value="Black"/>
+            <Setter Property="Background" Value="White"/>
+            <Setter Property="Padding" Value="4,2"/>
+            <Style.Triggers>
+                <!-- Hover -->
+                <Trigger Property="IsMouseOver" Value="True">
+                    <Setter Property="Background" Value="#DCE6F0"/>
+                </Trigger>
+                <!-- Selected item -->
+                <Trigger Property="IsSelected" Value="True">
+                    <Setter Property="Background" Value="#A8C4E8"/>
+                    <Setter Property="Foreground" Value="Black"/>
+                </Trigger>
+            </Style.Triggers>
+        </Style>
+    </Window.Resources>
+
+    <Grid Margin="0,-26,0,0" Height="460" VerticalAlignment="Top">
+
+        <!-- Author ComboBox -->
+        <ComboBox x:Name="AuthorComboBox"
+                  Margin="36,49,615,381"
+                  Height="30"
+                  FontSize="12"
+                  FontWeight="SemiBold"
+                  Background="#F5F5F5"
+                  Foreground="Black"
+                  BorderBrush="#B0B0B0"
+                  BorderThickness="1"
+                  Padding="6,2"
+                  HorizontalContentAlignment="Center"
+                  VerticalContentAlignment="Center"
+                  SelectionChanged="AuthorComboBox_SelectionChanged">
+            <ComboBoxItem Content="Choose an author" IsEnabled="False" IsSelected="True"/>
+        </ComboBox>
+
+        <!-- Book ComboBox -->
+        <ComboBox x:Name="BookComboBox"
+                  Margin="224,49,400,381"
+                  Height="30"
+                  FontSize="12"
+                  FontWeight="SemiBold"
+                  Background="#F5F5F5"
+                  Foreground="Black"
+                  BorderBrush="#B0B0B0"
+                  BorderThickness="1"
+                  Padding="6,2"
+                  HorizontalContentAlignment="Center"
+                  VerticalContentAlignment="Center"
+                  SelectionChanged="BookComboBox_SelectionChanged">
+            <ComboBoxItem Content="Choose a book" IsEnabled="False" IsSelected="True"/>
+        </ComboBox>
+
+        <!-- Main Operation ComboBox -->
+        <ComboBox x:Name="MainOperationComboBox"
+                  Margin="36,112,544,318"
+                  Height="30"
+                  FontSize="14"
+                  FontWeight="SemiBold"
+                  Background="#F5F5F5"
+                  Foreground="Black"
+                  BorderBrush="#B0B0B0"
+                  BorderThickness="1"
+                  Padding="6,2"
+                  HorizontalContentAlignment="Center"
+                  VerticalContentAlignment="Center"
+                  SelectionChanged="MainOperationComboBox_SelectionChanged">
+            <ComboBoxItem Content="Choose an operation" IsEnabled="False" IsSelected="True"/>
+            <ComboBoxItem Content="Filter"/>
+            <ComboBoxItem Content="Sort"/>
+            <ComboBoxItem Content="Join"/>
+            <ComboBoxItem Content="GroupJoin"/>
+            <ComboBoxItem Content="Aggregate"/>
+        </ComboBox>
+
+        <!-- Results TextBox -->
+        <TextBox x:Name="ResultsTextBox"
+                 TextWrapping="Wrap"
+                 Margin="36,270,155,34"
+                 FontSize="14"
+                 VerticalScrollBarVisibility="Auto"
+                 AcceptsReturn="True"
+                 Text="Results will appear here" TextChanged="ResultsTextBox_TextChanged"/>
+        <Button Content="Run Query" HorizontalAlignment="Left" Height="27" Margin="36,230,0,0" VerticalAlignment="Top" Width="182" Click="RunQuery_Click"/>
+    </Grid>
+</Window>
