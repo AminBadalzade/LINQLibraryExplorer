@@ -9,6 +9,7 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\LibraryClasses\LibraryClasses.csproj" />
     <ProjectReference Include="..\LibraryData\LibraryData.csproj" />
   </ItemGroup>
 
