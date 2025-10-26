@@ -12,21 +12,21 @@ In this app, I implemented an interactive library explorer where I can:
   - **Genre**
   - **Price range**
 - Apply multiple LINQ-based operations such as:
-  - 🏆 **Top 5 Expensive Books**
-  - 🕮 **Top 5 Modern Books**
-  - 💲 **Average Book Price**
-  - 👩‍💼 **Group Books by Author**
+  - **Top 5 Expensive Books**
+  - **Top 5 Modern Books**
+  - **Average Book Price**
+  - **Group Books by Author**
 
 ---
 
-## 💡 Technologies Used  
+## Technologies Used  
 - **C#**  
 - **WPF (Windows Presentation Foundation)**  
 - **LINQ (Language Integrated Query)**  
 
 ---
 
-## 🧠 What I Learned  
+## What I Learned  
 Through this project, I learned how to use **LINQ** to:  
 - Dynamically query and filter data based on user input  
 - Combine multiple LINQ methods (`Where`, `OrderByDescending`, `Take`, `Average`, `GroupBy`)  
@@ -38,7 +38,7 @@ I created sample data for `Authors`, `Genres`, and `Books` to simulate a small l
 
 ---
 
-## 🎯 Purpose of the Project  
+## Purpose of the Project  
 I built this project as a **self-learning exercise** to strengthen my understanding of:  
 - LINQ query syntax and method chaining  
 - How LINQ integrates with C# object collections  
