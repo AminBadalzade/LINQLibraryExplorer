@@ -52,14 +52,14 @@ It really helped me see how powerful LINQ can be in simplifying data manipulatio
 
 ### Example 1  
 <img width="783" height="492" alt="image" src="https://github.com/user-attachments/assets/6aeb9991-ff99-48b7-812a-afb307023f13" />
-In this example, I selected **William Shakespeare** as the author, set the **price range between 0 and 20**, and chose the **“Top 5 Expensive Books”** operation.  
+In this example, I selected William Shakespeare as the author, set the price range between 0 and 20, and chose the “Top 5 Expensive Books” operation.  
 The app used LINQ to instantly display the most expensive books within that range.  
 
 ---
 
 ### Example 2  
 <img width="779" height="493" alt="image" src="https://github.com/user-attachments/assets/083e2ec3-5b6b-466c-bbd8-7cda45c48b3e" />
-Here, I selected **Agatha Christie** as the author, set the **price range between 0 and 100**, and applied the **“Top 5 Modern”** operation.  
+Here, I selected Agatha Christie as the author, set the price range between 0 and 100, and applied the “Top 5 Modern” operation.  
 LINQ filtered and sorted the data to show her five most recently published books within the selected price range.  
 
 ---
